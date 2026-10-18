@@ -91,6 +91,23 @@
   }
   .story p { font-size: 17px; color: var(--muted); margin: 0 0 14px; }
 
+  .videos {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 64px 24px 0;
+    text-align: center;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    gap: 32px;
+    align-items: end;
+    margin-top: 28px;
+  }
+  figure { margin: 0; }
+  video { display: block; width: 100%; height: auto; background: var(--black); }
+  figcaption { font-size: 15px; color: var(--muted); margin-top: 10px; }
+
   .contact {
     max-width: 720px;
     margin: 0 auto;
@@ -125,6 +142,9 @@
     .story { padding: 48px 16px; }
     .story-inner img { order: -1; }
     .contact { padding: 48px 16px 56px; }
+    .videos { padding: 48px 16px 0; }
+    .video-grid { grid-template-columns: 1fr; gap: 28px; }
+    .portrait { max-width: 280px; margin: 0 auto; }
     .hero p { font-size: 17px; }
   }
 </style>
@@ -155,6 +175,24 @@
         <p>Founded by chef Sarah Ann Haugen, Vitalist began as a small superfood line and grew into a test kitchen, a café on Melrose Avenue in Los Angeles, and finally our home on Lake Minnetonka.</p>
         <p>Every recipe was built on the same idea: organic, plant-forward food that makes you feel good.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="videos">
+    <h2>Watch</h2>
+    <div class="video-grid">
+      <figure class="portrait">
+        <video controls playsinline preload="metadata" poster="video/vitalist-video.jpg" width="320" height="568">
+          <source src="video/vitalist-video.mp4" type="video/mp4">
+        </video>
+        <figcaption>Chef Sarah Ann Haugen</figcaption>
+      </figure>
+      <figure class="landscape">
+        <video controls playsinline preload="metadata" poster="video/kstp-vitalist.jpg" width="1280" height="720">
+          <source src="video/kstp-vitalist.mp4" type="video/mp4">
+        </video>
+        <figcaption>As seen on Twin Cities Live</figcaption>
+      </figure>
     </div>
   </section>
 
