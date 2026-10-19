@@ -38,30 +38,25 @@
     display: flex;
     justify-content: center;
   }
-  header img { width: 200px; height: auto; display: block; }
+  header img { width: 120px; height: auto; display: block; }
 
-  .note {
+  .intro {
     background: var(--soft);
     padding: 56px 24px;
-  }
-  .note {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
     gap: 48px;
     align-items: center;
-    max-width: none;
   }
-  .note > div { justify-self: end; max-width: 520px; }
-  .note > img { width: 100%; max-width: 400px; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+  .intro > div { justify-self: end; max-width: 480px; }
+  .intro > img { width: 100%; max-width: 400px; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
   h1 {
     font-size: clamp(28px, 4.2vw, 40px);
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: -.01em;
-    margin: 0 0 20px;
+    margin: 0;
   }
-  .note p { font-size: 18px; margin: 0 0 14px; }
-  .note a { color: var(--ink); }
 
   main {
     max-width: 860px;
@@ -112,11 +107,10 @@
   footer a { color: var(--ink); }
 
   @media (max-width: 760px) {
-    header img { width: 160px; }
-    .note { grid-template-columns: 1fr; gap: 28px; padding: 40px 16px; }
-    .note > div { justify-self: stretch; max-width: none; }
-    .note > img { max-width: none; }
-    .note p { font-size: 17px; }
+    header img { width: 96px; }
+    .intro { grid-template-columns: 1fr; gap: 28px; padding: 40px 16px; }
+    .intro > div { justify-self: stretch; max-width: none; }
+    .intro > img { max-width: none; }
   }
   @media (max-width: 600px) {
     main { padding: 36px 16px 32px; }
@@ -127,14 +121,12 @@
 </head>
 <body>
 <header>
-  <img src="img/logo.png" alt="Vitalist Fresh" width="495" height="183">
+  <img src="img/vitalist-logo.png" alt="Vitalist" width="360" height="360">
 </header>
 
-<section class="note">
+<section class="intro">
   <div>
-    <h1>Vitalist Fresh Begins a New Chapter</h1>
-    <p>To all our amazing guests who have shared in the Vitalist Fresh experience on Lake Minnetonka, thank you so much for being part of our journey!</p>
-    <p>Our café in Spring Park, Minnesota celebrated its final day on Sunday, August 3rd. Stay connected with us on Instagram <a href="https://www.instagram.com/vitalistfresh/" target="_blank" rel="noopener">@VitalistFresh</a> for all the exciting updates. We can't wait to continue this adventure with you!</p>
+    <h1>Organic, plant-forward food by chef Sarah Ann Haugen.</h1>
   </div>
   <img src="img/sarah.jpg" alt="Chef Sarah Ann Haugen holding a bowl of soup" width="1000" height="1000">
 </section>
